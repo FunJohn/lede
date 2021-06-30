@@ -33,7 +33,8 @@
 5. `make -j8 download V=s` 下载dl库（国内请尽量全局科学上网）
 
 6. 输入 `make -j1 V=s` （-j1 后面是线程数。第一次编译推荐用单线程）即可开始编译你要的固件了。
-7. 'nohup make -j1 V=s > logs/nohup.out &' 后台运行，不怕断线
+7. git clone helloword 到 `./lede/package/lean`
+8. `nohup make -j1 V=s > /sdb1/lede.log &` 后台运行，不怕断线
 
 本套代码保证肯定可以编译成功。里面包括了 R20 所有源代码，包括 IPK 的。
 
